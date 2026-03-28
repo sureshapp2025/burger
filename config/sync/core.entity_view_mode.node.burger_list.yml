@@ -1,0 +1,11 @@
+uuid: d96e1c70-62c8-4b84-a189-8092d88adeb2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.burger_list
+label: 'Burger list'
+description: null
+targetEntityType: node
+cache: true

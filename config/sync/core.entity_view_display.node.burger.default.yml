@@ -1,0 +1,61 @@
+uuid: 62e3c467-afb2-40f2-b9e1-43a944004ba5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.burger.field_image
+    - field.field.node.burger.field_menu_types
+    - field.field.node.burger.field_price
+    - field.field.node.burger.field_summary
+    - image.style.wide
+    - node.type.burger
+  module:
+    - image
+    - options
+    - text
+    - user
+id: node.burger.default
+targetEntityType: node
+bundle: burger
+mode: default
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: wide
+      image_loading:
+        attribute: eager
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_menu_types:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_price:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_summary:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,15 @@
+name: 'My Custom theme'
+type: theme
+description: 'A custom theme with base theme set to false.'
+package: Custom
+core_version_requirement: ^11
+base theme: false
+
+libraries:
+  - my_theme/global-styling
+
+regions:
+  header: Header
+  primary_menu: Primary menu
+  content: Content
+  footer: Footer

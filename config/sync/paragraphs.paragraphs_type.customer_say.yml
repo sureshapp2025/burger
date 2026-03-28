@@ -1,0 +1,10 @@
+uuid: b371ffa6-de31-440c-b1cd-9b04479625e4
+langcode: en
+status: true
+dependencies: {  }
+id: customer_say
+label: 'Customer say'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

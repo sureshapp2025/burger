@@ -1,0 +1,29 @@
+uuid: b977ecaf-723c-4218-80da-d2c24a3388dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_banner_background_image
+    - media.type.image
+    - paragraphs.paragraphs_type.home_page_offer
+id: paragraph.home_page_offer.field_banner_background_image
+field_name: field_banner_background_image
+entity_type: paragraph
+bundle: home_page_offer
+label: 'Banner background  Image'
+description: 'Banner background  Image'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

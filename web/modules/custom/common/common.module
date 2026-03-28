@@ -1,0 +1,46 @@
+<?php
+/**
+ * Implements hook_token_info().
+ */
+function common_token_info() {
+ $type = [
+    'name' => t('Custom tokens'),
+    'description' => t('Tokens provided by custom module'),
+  ];
+
+  $tokens = [];
+
+  $tokens['custom']['custom_name'] = [
+    'name' => t('Custom name'),
+    'description' => t('Returns a custom name value'),
+  ];
+
+  return [
+    'types' => [
+      'custom' => $type,
+    ],
+    'tokens' => $tokens,
+  ];
+}
+/**
+ * Implements hook_tokens().
+ */
+function common_tokens($type, $tokens, array $data, array $options, $bubbleable_metadata) {
+
+  $replacements = [];
+
+  if ($type == 'custom') {
+    foreach ($tokens as $name => $original) {
+
+      switch ($name) {
+
+        case 'custom_name':
+          $replacements[$original] = 'Hello Drupal';
+          break;
+
+      }
+    }
+  }
+
+  return $replacements;
+}

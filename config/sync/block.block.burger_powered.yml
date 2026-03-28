@@ -1,0 +1,22 @@
+uuid: 6b55d2ee-2e5c-4e06-a5cf-50ca38831ca0
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - burger
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: burger_powered
+theme: burger
+region: header
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

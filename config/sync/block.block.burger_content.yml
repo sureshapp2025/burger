@@ -1,0 +1,22 @@
+uuid: 31319f88-e4c7-409b-9d86-2ec9fdc5a099
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - burger
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: burger_content
+theme: burger
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

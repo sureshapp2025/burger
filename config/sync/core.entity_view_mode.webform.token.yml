@@ -1,0 +1,11 @@
+uuid: cfdb7802-e3db-4a50-8389-3fd4750620f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - webform
+id: webform.token
+label: Token
+description: null
+targetEntityType: webform
+cache: true

@@ -1,0 +1,46 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Functions to support theming in the burger theme.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK() for html.html.twig.
+ */
+function burger_preprocess_html(array &$variables): void {
+
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for page.html.twig.
+ */
+function burger_preprocess_page(array &$variables): void {
+
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for node.html.twig.
+ */
+function burger_preprocess_node(array &$variables): void {
+
+}
+
+function burger_preprocess_views_view_unformatted(&$variables) {
+
+  if ($variables['view']->id() === 'burger_menu_page') {
+
+    $field_definitions = \Drupal::service('entity_field.manager')
+      ->getFieldDefinitions('node', 'burger'); // change content type if needed
+
+    if (isset($field_definitions['field_menu_types'])) {
+
+      $allowed_values = $field_definitions['field_menu_types']
+        ->getSetting('allowed_values');
+
+      $variables['menu_types'] = $allowed_values;
+    }
+  }
+}

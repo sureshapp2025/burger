@@ -1,0 +1,10 @@
+uuid: 2cc8a158-3d91-43fb-acea-b8011f6b03ba
+langcode: en
+status: true
+dependencies: {  }
+id: home_page_paragraph
+label: 'Home -page-paragraph'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,41 @@
+uuid: 54d30212-3483-443a-af0d-8bd38c244571
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.burger.field_image
+    - field.field.node.burger.field_menu_types
+    - field.field.node.burger.field_price
+    - field.field.node.burger.field_summary
+    - image.style.medium
+    - node.type.burger
+  module:
+    - image
+    - user
+id: node.burger.teaser
+targetEntityType: node
+bundle: burger
+mode: teaser
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_menu_types: true
+  field_price: true
+  field_summary: true
+  langcode: true

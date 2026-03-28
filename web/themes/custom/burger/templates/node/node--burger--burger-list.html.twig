@@ -1,0 +1,35 @@
+<div class="col-sm-6 col-lg-4 all
+  {% for item in node.field_menu_types %}
+    {{ item.entity.label|lower|clean_class }}
+  {% endfor %}
+">
+
+  <div class="box">
+    <div>
+
+      <div class="img-box">
+        {{ content.field_image }}
+      </div>
+
+      <div class="detail-box">
+        <h5>{{ label }}</h5>
+
+        <p>
+          {{ node.field_summary.value }}
+        </p>
+
+        <div class="options">
+          <h6>
+            {{ node.field_price.value }}
+          </h6>
+
+          <a href="#">🛒</a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+

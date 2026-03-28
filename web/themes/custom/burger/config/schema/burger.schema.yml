@@ -1,0 +1,8 @@
+# Schema for the configuration files of the burger theme.
+burger.settings:
+  type: theme_settings
+  label: 'burger settings'
+  mapping:
+    example:
+      type: string
+      label: Example

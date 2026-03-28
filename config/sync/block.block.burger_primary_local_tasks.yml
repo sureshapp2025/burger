@@ -1,0 +1,22 @@
+uuid: 35b5d1a5-3b1f-4ed6-a648-a262655dbaef
+langcode: en
+status: false
+dependencies:
+  theme:
+    - burger
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: burger_primary_local_tasks
+theme: burger
+region: header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

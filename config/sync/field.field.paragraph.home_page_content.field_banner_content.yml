@@ -1,0 +1,26 @@
+uuid: cb820fa4-9bdf-48a0-a40c-dd66f4984bfc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_banner_content
+    - filter.format.basic_html
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.home_page_content
+  module:
+    - text
+id: paragraph.home_page_content.field_banner_content
+field_name: field_banner_content
+entity_type: paragraph
+bundle: home_page_content
+label: 'Home page summary'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - full_html
+field_type: text_long

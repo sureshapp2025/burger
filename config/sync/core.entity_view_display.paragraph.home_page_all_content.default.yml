@@ -1,0 +1,24 @@
+uuid: 94d352d0-8ca5-44ba-a948-c884e94f8c43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_page_all_content.field_all_data
+    - paragraphs.paragraphs_type.home_page_all_content
+  module:
+    - entity_reference_revisions
+id: paragraph.home_page_all_content.default
+targetEntityType: paragraph
+bundle: home_page_all_content
+mode: default
+content:
+  field_all_data:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

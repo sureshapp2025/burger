@@ -1,0 +1,59 @@
+uuid: df0cd013-0530-4527-97fb-8d70bc4df903
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_all_data
+    - paragraphs.paragraphs_type.banner_slider
+    - paragraphs.paragraphs_type.home_customer_review
+    - paragraphs.paragraphs_type.home_offer_section
+    - paragraphs.paragraphs_type.home_page_all_content
+  module:
+    - entity_reference_revisions
+id: paragraph.home_page_all_content.field_all_data
+field_name: field_all_data
+entity_type: paragraph
+bundle: home_page_all_content
+label: 'All data'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      banner_slider: banner_slider
+      home_customer_review: home_customer_review
+      home_offer_section: home_offer_section
+    negate: 0
+    target_bundles_drag_drop:
+      banner_slider:
+        weight: 11
+        enabled: true
+      customer_say:
+        weight: 12
+        enabled: false
+      home_customer_review:
+        weight: 13
+        enabled: true
+      home_offer_section:
+        weight: 14
+        enabled: true
+      home_page_all_content:
+        weight: 10
+        enabled: false
+      home_page_content:
+        weight: 15
+        enabled: false
+      home_page_offer:
+        weight: 16
+        enabled: false
+      home_page_paragraph:
+        weight: 17
+        enabled: false
+      page_layout:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

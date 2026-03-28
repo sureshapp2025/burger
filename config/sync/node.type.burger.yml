@@ -1,0 +1,17 @@
+uuid: 278ed233-89d9-49d7-8817-10a0f57521f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Burger
+type: burger
+description: null
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: true

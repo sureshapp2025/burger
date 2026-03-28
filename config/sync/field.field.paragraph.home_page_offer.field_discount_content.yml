@@ -1,0 +1,19 @@
+uuid: 1c51d708-78bf-42d0-9ee3-b7c6bbf7da4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_discount_content
+    - paragraphs.paragraphs_type.home_page_offer
+id: paragraph.home_page_offer.field_discount_content
+field_name: field_discount_content
+entity_type: paragraph
+bundle: home_page_offer
+label: 'Discount content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

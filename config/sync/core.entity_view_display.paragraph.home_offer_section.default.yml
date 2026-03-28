@@ -1,0 +1,24 @@
+uuid: e2c591d5-12bd-4c8d-92ae-8f7c9f9a057c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_offer_section.field_offer_section
+    - paragraphs.paragraphs_type.home_offer_section
+  module:
+    - entity_reference_revisions
+id: paragraph.home_offer_section.default
+targetEntityType: paragraph
+bundle: home_offer_section
+mode: default
+content:
+  field_offer_section:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

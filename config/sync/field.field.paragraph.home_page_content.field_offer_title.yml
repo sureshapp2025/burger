@@ -1,0 +1,19 @@
+uuid: 0b3e02ef-8d81-47a1-9070-cb65ed55bd06
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_offer_title
+    - paragraphs.paragraphs_type.home_page_content
+id: paragraph.home_page_content.field_offer_title
+field_name: field_offer_title
+entity_type: paragraph
+bundle: home_page_content
+label: 'Home Page Title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,10 @@
+uuid: 5acc23ea-fd2c-4b2e-8c30-6cb378968f46
+langcode: en
+status: true
+dependencies: {  }
+id: home_page_offer
+label: 'Home Page offer'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,10 @@
+uuid: 62d2ba9a-1899-487e-b9fd-19926683f875
+langcode: en
+status: true
+dependencies: {  }
+id: home_offer_section
+label: 'Home - Offer - Section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

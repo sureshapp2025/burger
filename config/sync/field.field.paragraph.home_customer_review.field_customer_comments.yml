@@ -1,0 +1,46 @@
+uuid: 294a6281-b0a5-44e8-8b10-c291083df55f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_customer_comments
+    - paragraphs.paragraphs_type.customer_say
+    - paragraphs.paragraphs_type.home_customer_review
+  module:
+    - entity_reference_revisions
+id: paragraph.home_customer_review.field_customer_comments
+field_name: field_customer_comments
+entity_type: paragraph
+bundle: home_customer_review
+label: 'Customer comments'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      customer_say: customer_say
+    negate: 0
+    target_bundles_drag_drop:
+      banner_slider:
+        weight: 8
+        enabled: false
+      customer_say:
+        weight: 9
+        enabled: true
+      home_customer_review:
+        weight: 7
+        enabled: false
+      home_page_content:
+        weight: 10
+        enabled: false
+      home_page_offer:
+        weight: 11
+        enabled: false
+      page_layout:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

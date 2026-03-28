@@ -1,0 +1,38 @@
+# Ignore core
+/core/
+/vendor/
+
+# Ignore contributed modules/themes (if using Composer)
+/modules/contrib/
+/themes/contrib/
+/profiles/contrib/
+
+# Ignore custom files (optional: remove if you want to track them)
+/sites/*/files
+/sites/*/private
+
+# Ignore settings files
+/sites/*/settings.php
+/sites/*/settings.local.php
+/sites/*/services.yml
+
+# Ignore environment files
+.env
+.env.local
+
+# Ignore IDE/editor files
+/.idea/
+/.vscode/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore node/npm
+/node_modules/
+
+# Ignore composer lock (optional)
+# composer.lock

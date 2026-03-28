@@ -1,0 +1,24 @@
+uuid: cb458f0c-d165-4423-9441-b36a396c7e71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_customer_review.field_customer_comments
+    - paragraphs.paragraphs_type.home_customer_review
+  module:
+    - entity_reference_revisions
+id: paragraph.home_customer_review.default
+targetEntityType: paragraph
+bundle: home_customer_review
+mode: default
+content:
+  field_customer_comments:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

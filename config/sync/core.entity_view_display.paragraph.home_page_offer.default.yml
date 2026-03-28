@@ -1,0 +1,50 @@
+uuid: fd3d38d6-2ae7-42de-b7f0-b31291f4388a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_page_offer.field_banner_background_image
+    - field.field.paragraph.home_page_offer.field_discount_content
+    - field.field.paragraph.home_page_offer.field_offer_food_image
+    - field.field.paragraph.home_page_offer.field_offer_title
+    - paragraphs.paragraphs_type.home_page_offer
+id: paragraph.home_page_offer.default
+targetEntityType: paragraph
+bundle: home_page_offer
+mode: default
+content:
+  field_banner_background_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_discount_content:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_offer_food_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_offer_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: 61eff51c-9537-4157-ab4b-1a0836b724eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.burger
+  module:
+    - text
+id: node.burger.field_summary
+field_name: field_summary
+entity_type: node
+bundle: burger
+label: Summary
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

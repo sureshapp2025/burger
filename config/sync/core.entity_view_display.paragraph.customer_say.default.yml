@@ -1,0 +1,41 @@
+uuid: 33e4e3ba-5c2d-47e2-b2b1-5febd2c7a1b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.customer_say.field_customer_image
+    - field.field.paragraph.customer_say.field_customer_name
+    - field.field.paragraph.customer_say.field_customer_summary
+    - paragraphs.paragraphs_type.customer_say
+  module:
+    - text
+id: paragraph.customer_say.default
+targetEntityType: paragraph
+bundle: customer_say
+mode: default
+content:
+  field_customer_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_customer_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_customer_summary:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

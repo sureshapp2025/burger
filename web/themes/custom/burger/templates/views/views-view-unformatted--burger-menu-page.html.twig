@@ -1,0 +1,44 @@
+{#
+/**
+ * @file
+ * Unified template for both Block and Page displays of the burger_menu_page view.
+ * Rename/Delete views-view-unformatted--burger-menu-page--block-1.html.twig
+ * and views-view-unformatted--burger-menu-page--page-1.html.twig to use this.
+ */
+#}
+{% if title %}
+	<h3>{{ title }}</h3>
+{% endif %}
+
+<section class="food_section layout_padding">
+	<div class="container">
+
+		<div class="heading_container heading_center">
+			<h2>Our Menu</h2>
+		</div>
+
+		<ul class="filters_menu">
+			<li class="active" data-filter="*" data-value="all">All</li>
+			{% for key, label in menu_types %}
+				<li data-value="{{ key }}" data-filter=".{{ key|clean_class }}">
+					{{ label }}
+				</li>
+			{% endfor %}
+		</ul>
+
+		<div class="filters-content">
+			<div class="row grid">
+				{% for row in rows %}
+					{{ row.content }}
+				{% endfor %}
+			</div>
+		</div>
+
+		{% if view.display_handler.getPluginId() == 'page' %}
+			<div class="btn-box">
+				<a href="">View More</a>
+			</div>
+		{% endif %}
+
+	</div>
+</section>

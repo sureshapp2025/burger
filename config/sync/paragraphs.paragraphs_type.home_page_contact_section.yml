@@ -1,0 +1,10 @@
+uuid: ed1ede04-e0aa-4e0f-b229-9613fe74b26f
+langcode: en
+status: true
+dependencies: {  }
+id: home_page_contact_section
+label: 'Home page  - Contact section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

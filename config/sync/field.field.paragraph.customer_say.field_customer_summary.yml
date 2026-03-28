@@ -1,0 +1,22 @@
+uuid: 8106271c-3089-4265-9f8c-58c7a72143d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_customer_summary
+    - paragraphs.paragraphs_type.customer_say
+  module:
+    - text
+id: paragraph.customer_say.field_customer_summary
+field_name: field_customer_summary
+entity_type: paragraph
+bundle: customer_say
+label: 'Customer Summary'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

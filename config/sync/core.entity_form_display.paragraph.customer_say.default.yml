@@ -1,0 +1,43 @@
+uuid: 1b438d0c-f9b6-4292-9b19-18ec0f35df62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.customer_say.field_customer_image
+    - field.field.paragraph.customer_say.field_customer_name
+    - field.field.paragraph.customer_say.field_customer_summary
+    - paragraphs.paragraphs_type.customer_say
+  module:
+    - media_library
+    - text
+id: paragraph.customer_say.default
+targetEntityType: paragraph
+bundle: customer_say
+mode: default
+content:
+  field_customer_image:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_customer_name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_customer_summary:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

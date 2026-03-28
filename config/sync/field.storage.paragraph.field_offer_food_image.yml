@@ -1,0 +1,20 @@
+uuid: 4e645b89-14be-4d5f-88dd-9e912f0eb7f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+id: paragraph.field_offer_food_image
+field_name: field_offer_food_image
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

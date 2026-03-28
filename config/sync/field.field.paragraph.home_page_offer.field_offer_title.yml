@@ -1,0 +1,19 @@
+uuid: f55ad5e9-0264-4af7-a148-88bfe7e1a6df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_offer_title
+    - paragraphs.paragraphs_type.home_page_offer
+id: paragraph.home_page_offer.field_offer_title
+field_name: field_offer_title
+entity_type: paragraph
+bundle: home_page_offer
+label: 'Offer title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

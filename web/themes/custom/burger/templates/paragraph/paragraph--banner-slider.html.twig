@@ -1,0 +1,54 @@
+ {# Get background image URL from Media #}
+{% set bg_image = '' %}
+{% if paragraph.field_banner_background_image.entity %}
+  {% set media = paragraph.field_banner_background_image.entity %}
+  {% if media.field_media_image.entity %}
+    {% set bg_image = file_url(media.field_media_image.entity.fileuri) %}
+  {% endif %}
+{% endif %}
+
+<section class="slider_section"
+  {% if bg_image %}
+    style="background-image: url('{{ bg_image }}'); background-size: cover; background-position: center;"
+  {% endif %}
+>
+
+  <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+
+    <div class="carousel-inner">
+      {# Loop banner content field #}
+      {% for item in paragraph.field_banner_content %}
+        <div class="carousel-item {% if loop.first %}active{% endif %}">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-7 col-lg-6">
+                <div class="detail-box">
+
+                  {# If your content includes full HTML (h1, p, button) #}
+                  {{ item.value|raw }}
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+
+    </div>
+
+    {# Indicators dynamically #}
+    <div class="container">
+      <ol class="carousel-indicators">
+        {% for item in paragraph.field_banner_content %}
+          <li data-target="#customCarousel1"
+              data-slide-to="{{ loop.index0 }}"
+              class="{% if loop.first %}active{% endif %}">
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+
+  </div>
+
+</section>
+

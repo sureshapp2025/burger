@@ -1,0 +1,68 @@
+uuid: a6943aa2-28a2-4787-b998-42b4277c1173
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_title
+    - node.type.layout_page
+    - paragraphs.paragraphs_type.banner_slider
+    - paragraphs.paragraphs_type.home_customer_review
+    - paragraphs.paragraphs_type.home_offer_section
+    - paragraphs.paragraphs_type.home_page_contact_section
+    - paragraphs.paragraphs_type.home_page_content
+    - paragraphs.paragraphs_type.page_layout
+  module:
+    - entity_reference_revisions
+id: node.layout_page.field_page_title
+field_name: field_page_title
+entity_type: node
+bundle: layout_page
+label: 'Page Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      banner_slider: banner_slider
+      home_offer_section: home_offer_section
+      home_page_content: home_page_content
+      home_customer_review: home_customer_review
+      page_layout: page_layout
+      home_page_contact_section: home_page_contact_section
+    negate: 0
+    target_bundles_drag_drop:
+      banner_slider:
+        weight: -15
+        enabled: true
+      customer_say:
+        weight: -14
+        enabled: false
+      home_customer_review:
+        weight: -11
+        enabled: true
+      home_offer_section:
+        weight: -13
+        enabled: true
+      home_page_all_content:
+        weight: 15
+        enabled: false
+      home_page_contact_section:
+        weight: 16
+        enabled: true
+      home_page_content:
+        weight: -12
+        enabled: true
+      home_page_offer:
+        weight: -10
+        enabled: false
+      home_page_paragraph:
+        weight: 19
+        enabled: false
+      page_layout:
+        weight: -9
+        enabled: true
+field_type: entity_reference_revisions

@@ -1,0 +1,29 @@
+uuid: b34cadd3-5efa-4ffe-8d72-9792c27bd6c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_offer_food_image
+    - media.type.image
+    - paragraphs.paragraphs_type.home_page_offer
+id: paragraph.home_page_offer.field_offer_food_image
+field_name: field_offer_food_image
+entity_type: paragraph
+bundle: home_page_offer
+label: 'Offer Food Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
