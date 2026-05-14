@@ -1,0 +1,25 @@
+{{ attach_library('burger/global') }}
+
+<section class="client_section layout_padding-bottom">
+	<div class="container">
+
+		<div class="heading_container heading_center psudo_white_primary mb_45">
+			<h2>
+				What Says Our Customers
+			</h2>
+		</div>
+		{% if content.field_customer_comments is not empty %}
+			<div class="carousel-wrap row">
+				<div class="owl-carousel client_owl-carousel">
+					{% for key, item in content.field_customer_comments %}
+						{% if key|first != '#' %}
+							{{ item }}
+						{% endif %}
+					{% endfor %}
+
+				</div>
+			</div>
+		{% endif %}
+
+	</div>
+</section>

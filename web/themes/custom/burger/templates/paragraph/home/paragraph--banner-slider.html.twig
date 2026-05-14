@@ -1,0 +1,60 @@
+{{ attach_library('burger/global') }}
+
+{# Get background image URL from Media or fallback to theme default #}
+{% set bg_image = (base_path ~ directory ~ '/images/hero-bg.jpg') %}
+{% if paragraph.field_banner_background_image.entity %}
+	{% set media = paragraph.field_banner_background_image.entity %}
+	{% if media.field_media_image.entity %}
+		{% set bg_image = file_url(media.field_media_image.entity.fileuri) %}
+	{% endif %}
+{% endif %}
+
+{# Generate unique ID for this carousel #}
+{% set carousel_id = 'customCarousel-' ~ paragraph.id() %}
+
+<section class="slider_section" style="background-image: url('{{ bg_image }}'); background-size: cover; background-position: center;">
+
+	<div id="customCarousel1" class="carousel slide" data-bs-ride="carousel">
+
+		<div
+			class="carousel-inner">
+			{# Loop banner content field #}
+			{% for item in paragraph.field_banner_content %}
+				<div class="carousel-item {% if loop.first %}active{% endif %}">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-7 col-lg-6">
+								<div class="detail-box">
+									<h1>
+										{{ paragraph.field_banner_title.value }}
+									</h1>
+									<div
+										class="description-text">
+										{# If your content includes full HTML #}
+										{{ item.value|raw }}
+									</div>
+									<div class="btn-box">
+										<a href="" class="btn1">
+											Order Now
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+
+		{# Indicators dynamically - updated to BS5 syntax #}
+		<div class="container">
+			<div class="carousel-indicators">
+				{% for item in paragraph.field_banner_content %}
+					<button type="button" data-bs-target="#{{ carousel_id }}" data-bs-slide-to="{{ loop.index0 }}" class="{% if loop.first %}active{% endif %}" aria-current="{% if loop.first %}true{% endif %}" aria-label="Slide {{ loop.index }}"></button>
+				{% endfor %}
+			</div>
+		</div>
+
+	</div>
+
+</section></div>

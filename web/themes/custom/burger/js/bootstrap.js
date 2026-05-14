@@ -5214,7 +5214,7 @@
         var ltMajor = 2;
         var minMinor = 9;
         var minPatch = 1;
-        var maxMajor = 4;
+        var maxMajor = 5;
 
         if (
             (version[0] < ltMajor && version[1] < minMinor) ||

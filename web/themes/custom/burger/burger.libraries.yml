@@ -10,8 +10,11 @@ global:
         { type: external }
       css/common/style.css: {}
       css/common/responsive.css: {}
+      css/theme/views-exposed-form.css: {}
 
   js:
+    https://code.jquery.com/jquery-3.6.0.min.js:
+      { type: external }
     https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js:
       { type: external }
     js/bootstrap.js: {}
@@ -20,8 +23,6 @@ global:
     https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js:
       { type: external }
     https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js:
-      { type: external }
-    https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap:
       { type: external }
     js/custom.js: {}
     js/burger.js: {}

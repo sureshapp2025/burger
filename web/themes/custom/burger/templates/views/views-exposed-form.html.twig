@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Default theme implementation of a views exposed form.
+ *
+ * Available variables:
+ * - form: A render element representing the form.
+ *
+ * @see template_preprocess_views_exposed_form()
+ *
+ * @ingroup themeable
+ */
+#}
+{% if q is not empty %}
+  {{ q }}
+{% endif %}
+
+<div class="views-exposed-form burger-search-wrapper">
+  <div class="search-form-container">
+    <div class="search-title mb-4 text-center">
+      <h2 class="text-white">Find Your <span>Favorite</span> Burger</h2>
+    </div>
+    {{ form }}
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="item">
+	<div class="box">
+		<div class="detail-box">
+			<p>
+				{{ paragraph.field_customer_summary.value|raw }}
+			</p>
+			<h6>
+				{{ paragraph.field_customer_name.value }}
+			</h6>
+		</div>
+		<div class="img-box">
+			{% if paragraph.field_customer_image.entity %}
+				{% set media = paragraph.field_customer_image.entity %}
+				{% if media.field_media_image.entity %}
+					{% set file = media.field_media_image.entity %}
+					{# Use file_url with the URI #}
+					<img src="{{ file_url(file.uri.value) }}" alt="{{ paragraph.field_customer_name.value }}" class="box-img">
+				{% endif %}
+			{% endif %}
+		</div>
+	</div>
+</div>

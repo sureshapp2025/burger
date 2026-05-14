@@ -1,0 +1,48 @@
+<!-- about section -->
+
+{% set about_image = '' %}
+{% if paragraph.field_about_us_images.entity %}
+	{% set media = paragraph.field_about_us_images.entity %}
+	{% if media.field_media_image.entity %}
+		{% set about_image = file_url(media.field_media_image.entity.fileuri) %}
+	{% endif %}
+{% endif %}
+
+<section class="about_section layout_padding">
+	<div class="container  ">
+		<div class="row">
+			<div class="col-md-6 ">
+				<div class="img-box">
+					{% if about_image %}
+						<img src="{{ about_image }}" alt="{{ paragraph.field_about_us_title.value }}">
+					{% else %}
+						{{ content.field_about_us_image }}
+					{% endif %}
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="detail-box">
+					<div class="heading_container">
+						<h2>
+							{{ paragraph.field_about_us_title.value }}
+						</h2>
+					</div>
+					<p>
+						{{ paragraph.field_about_describtion.value|raw }}
+					</p>
+					{% if paragraph.field_about_us_link.0.url %}
+						<a href="{{ paragraph.field_about_us_link.0.url }}">
+							Read More
+						</a>
+					{% else %}
+						<a href="#">
+							Read More
+						</a>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- end about section -->

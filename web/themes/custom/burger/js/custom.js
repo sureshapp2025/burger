@@ -1,5 +1,17 @@
 (function ($, Drupal, once) {
 
+  // Polyfill for jQuery 4.0 compatibility (needed by Owl Carousel 2)
+  if (typeof $.camelCase !== 'function') {
+    $.camelCase = function (str) {
+      return str.replace(/-([a-z])/g, function (g) { return g[1].toUpperCase(); });
+    };
+  }
+
+  // Dummy myMap function to prevent Google Maps callback errors
+  window.myMap = window.myMap || function () {
+    console.log("Google Maps API callback executed.");
+  };
+
   Drupal.behaviors.myCustomScripts = {
     attach: function (context) {
       // Hide exposed form for both page and block displays
@@ -84,24 +96,29 @@
         var $carousel = $(element);
         var itemCount = $carousel.children().length;
 
-        $carousel.owlCarousel({
-          loop: itemCount > 1,
-          margin: 0,
-          dots: false,
-          nav: true,
-          autoplay: true,
-          autoplayHoverPause: true,
-          smartSpeed: 800,
-          navText: [
-            '<i class="fa fa-angle-left"></i>',
-            '<i class="fa fa-angle-right"></i>'
-          ],
-          responsive: {
-            0: { items: 1 },
-            768: { items: 2 },
-            1000: { items: 2 }
-          }
-        });
+        if (itemCount > 0) {
+          $carousel.owlCarousel({
+            loop: itemCount > 1,
+            margin: 0,
+            dots: false,
+            nav: true,
+            autoplay: true,
+            autoplayHoverPause: true,
+            smartSpeed: 800,
+            navText: [
+              '<i class="fa fa-angle-left"></i>',
+              '<i class="fa fa-angle-right"></i>'
+            ],
+            responsive: {
+              0: { items: 1 },
+              768: { items: 2 },
+              1000: { items: 2 }
+            }
+          });
+        } else {
+          console.warn("Owl Carousel found but has no slides.");
+          $carousel.hide(); // Hide if empty to avoid layout shifts or errors
+        }
 
       });
 

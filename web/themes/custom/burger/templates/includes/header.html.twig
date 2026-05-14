@@ -1,52 +1,49 @@
+{{ attach_library('burger/global') }}
+
 <div class="hero_area">
-    <!-- <div class="bg-box">
-      <img src="{{ base_path ~ directory }}/images/hero-bg.jpg" alt="">
-    </div> -->
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container">
-<nav class="navbar navbar-expand-lg custom_nav-container">
-  
-  <a class="navbar-brand" href="{{ path('<front>') }}">
-    <span>Feane</span>
-  </a>
+	<div
+		class="bg-box">{# <img src="" alt=""> #}
+	</div>
+	<!-- header section strats -->
+	<header class="header_section">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg custom_nav-container">
 
-  <button class="navbar-toggler" type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-    <span></span>
-  </button>
+				<a class="navbar-brand" href="{{ path('<front>') }}">
+					<span>Feane</span>
+				</a>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span></span>
+				</button>
 
-		{{ drupal_menu('main') }}
-    <div class="user_option">
-      <a href="#" class="user_link">
-        <i class="fa fa-user" aria-hidden="true"></i>
-      </a>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-      <a class="cart_link" href="#">
-        {# Your SVG remains same here #}
-      </a>
+					{{ drupal_menu('main') }}
+					<div class="user_option">
+						<a href="#" class="user_link">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</a>
 
-      <form class="form-inline">
-        <button class="btn my-2 my-sm-0 nav_search-btn" type="submit">
-          <i class="fa fa-search" aria-hidden="true"></i>
-        </button>
-      </form>
+						<a
+							class="cart_link" href="#">{# Your SVG remains same here #}
+						</a>
 
-      <a href="#" class="order_online">
-        Order Online
-      </a>
-    </div>
+						<form class="form-inline">
+							<button class="btn my-2 my-sm-0 nav_search-btn" type="submit">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</button>
+						</form>
 
-  </div>
-</nav>
+						<a href="#" class="order_online">
+							Order Online
+						</a>
+					</div>
+
+				</div>
+			</nav>
 
 
-      </div>
-    </header>
-    <!-- end header section -->
+		</div>
+	</header>
+	<!-- end header section -->
