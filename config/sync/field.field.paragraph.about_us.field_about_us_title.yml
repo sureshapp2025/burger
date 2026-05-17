@@ -1,0 +1,19 @@
+uuid: 6b999c44-2274-42ef-9276-036d21e050f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_about_us_title
+    - paragraphs.paragraphs_type.about_us
+id: paragraph.about_us.field_about_us_title
+field_name: field_about_us_title
+entity_type: paragraph
+bundle: about_us
+label: 'About us title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

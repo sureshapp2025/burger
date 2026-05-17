@@ -1,0 +1,22 @@
+uuid: d9d85636-a154-40e2-aba6-01377cdac7c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.booking_paragraph
+id: paragraph.booking_paragraph.status
+field_name: status
+entity_type: paragraph
+bundle: booking_paragraph
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

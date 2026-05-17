@@ -1,0 +1,22 @@
+uuid: 6ed126c1-3405-4d06-9652-cce1a3bf733e
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.home_customer_review
+id: paragraph.home_customer_review.status
+field_name: status
+entity_type: paragraph
+bundle: home_customer_review
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

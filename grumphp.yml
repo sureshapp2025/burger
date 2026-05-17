@@ -1,0 +1,32 @@
+grumphp:
+    tasks:
+        composer:
+            jobs:
+                check-code-style:
+                    tasks:
+                        - phpcs
+                        - phpcbf
+        phpcs:
+            standard: 'Drupal, DrupalPractice'
+            ignore_patterns: [vendor]
+        phpcbf:
+            standard: 'Drupal, DrupalPractice'
+            ignore_patterns: [vendor]
+        phpstan:
+            memory_limit: '-1'
+        parallel:
+            tasks:
+                - composer
+                - phpcs
+                - phpcbf
+                - phpstan
+    stop_on_failure: false
+    ignore_untracked_files: false
+    ascii_in_php_files: false
+    hide_circumvention_info: false
+    disable_ansi_output: false
+    ignore_paths: [vendor, public]
+    binaries:
+        phpcs: 'vendor/bin/phpcs'
+        phpcbf: 'vendor/bin/phpcbf'
+        phpstan: 'vendor/bin/phpstan'

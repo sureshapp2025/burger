@@ -1,0 +1,22 @@
+uuid: 117c7780-b091-410f-a07f-7bfc0c87ecd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.booking_paragraph.field_booking_page
+    - paragraphs.paragraphs_type.booking_paragraph
+id: paragraph.booking_paragraph.default
+targetEntityType: paragraph
+bundle: booking_paragraph
+mode: default
+content:
+  field_booking_page:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

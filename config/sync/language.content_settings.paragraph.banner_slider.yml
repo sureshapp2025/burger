@@ -1,0 +1,18 @@
+uuid: 831a0f33-1ece-43bc-a42b-ff266bda9c7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.banner_slider
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.banner_slider
+target_entity_type_id: paragraph
+target_bundle: banner_slider
+default_langcode: site_default
+language_alterable: false

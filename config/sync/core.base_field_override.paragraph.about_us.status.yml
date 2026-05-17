@@ -1,0 +1,22 @@
+uuid: 2acb28eb-7ce3-4073-908a-25cdd0ea5a61
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.about_us
+id: paragraph.about_us.status
+field_name: status
+entity_type: paragraph
+bundle: about_us
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

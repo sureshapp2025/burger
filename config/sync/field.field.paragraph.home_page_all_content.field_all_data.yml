@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.paragraph.field_all_data
     - paragraphs.paragraphs_type.banner_slider
+    - paragraphs.paragraphs_type.booking_paragraph
     - paragraphs.paragraphs_type.home_customer_review
     - paragraphs.paragraphs_type.home_offer_section
     - paragraphs.paragraphs_type.home_page_all_content
@@ -25,12 +26,19 @@ settings:
   handler_settings:
     target_bundles:
       banner_slider: banner_slider
+      booking_paragraph: booking_paragraph
       home_customer_review: home_customer_review
       home_offer_section: home_offer_section
     negate: 0
     target_bundles_drag_drop:
+      about_us:
+        weight: 14
+        enabled: false
       banner_slider:
         weight: 11
+        enabled: true
+      booking_paragraph:
+        weight: 13
         enabled: true
       customer_say:
         weight: 12
@@ -43,6 +51,9 @@ settings:
         enabled: true
       home_page_all_content:
         weight: 10
+        enabled: false
+      home_page_contact_section:
+        weight: 20
         enabled: false
       home_page_content:
         weight: 15

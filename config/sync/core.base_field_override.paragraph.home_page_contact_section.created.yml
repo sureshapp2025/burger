@@ -1,0 +1,18 @@
+uuid: aa00ac6a-4a83-4501-b1f8-44ecb1a71b9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.home_page_contact_section
+id: paragraph.home_page_contact_section.created
+field_name: created
+entity_type: paragraph
+bundle: home_page_contact_section
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

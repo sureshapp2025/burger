@@ -1,0 +1,23 @@
+uuid: fac3bd0a-2bdb-491d-ad61-f608c5e6ff61
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.booking_paragraph.field_booking_page
+    - paragraphs.paragraphs_type.booking_paragraph
+id: paragraph.booking_paragraph.default
+targetEntityType: paragraph
+bundle: booking_paragraph
+mode: default
+content:
+  field_booking_page:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

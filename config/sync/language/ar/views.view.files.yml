@@ -1,0 +1,25 @@
+label: الملفات
+display:
+  default:
+    display_options:
+      title: الملفات
+      fields:
+        filename:
+          label: الاسم
+        status:
+          label: الحالة
+        operations:
+          label: العمليات
+      filters:
+        status:
+          expose:
+            label: الحالة
+  page_1:
+    display_options:
+      menu:
+        title: الملفات
+  page_2:
+    display_options:
+      fields:
+        type:
+          label: 'نوع الكيان'

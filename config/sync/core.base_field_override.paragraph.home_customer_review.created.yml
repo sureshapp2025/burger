@@ -1,0 +1,18 @@
+uuid: 2c70d90e-7b9c-47db-9677-388ee9d92e2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.home_customer_review
+id: paragraph.home_customer_review.created
+field_name: created
+entity_type: paragraph
+bundle: home_customer_review
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

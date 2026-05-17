@@ -1,0 +1,16 @@
+display:
+  default:
+    display_options:
+      fields:
+        type:
+          label: النوع
+        timestamp:
+          label: التاريخ
+        name:
+          label: مستخدم
+        link:
+          label: العمليات
+      filters:
+        type:
+          expose:
+            label: النوع

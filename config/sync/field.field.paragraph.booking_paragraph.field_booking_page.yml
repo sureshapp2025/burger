@@ -1,0 +1,19 @@
+uuid: b45e07d3-0c67-4d2b-9249-c061c6cb46c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_booking_page
+    - paragraphs.paragraphs_type.booking_paragraph
+id: paragraph.booking_paragraph.field_booking_page
+field_name: field_booking_page
+entity_type: paragraph
+bundle: booking_paragraph
+label: 'Booking page'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

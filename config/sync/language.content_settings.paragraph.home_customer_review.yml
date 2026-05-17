@@ -1,0 +1,18 @@
+uuid: 1dcd6504-6628-4338-a61e-4489d39a80af
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.home_customer_review
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.home_customer_review
+target_entity_type_id: paragraph
+target_bundle: home_customer_review
+default_langcode: site_default
+language_alterable: false

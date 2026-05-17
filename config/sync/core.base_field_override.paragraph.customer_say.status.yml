@@ -1,0 +1,22 @@
+uuid: f71158d7-aadf-4e71-af56-6031943a7e1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.customer_say
+id: paragraph.customer_say.status
+field_name: status
+entity_type: paragraph
+bundle: customer_say
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

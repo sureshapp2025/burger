@@ -77,7 +77,7 @@ elements: |-
     '#attributes':
       class:
         - btn_box
-    '#submit__label': 'Send message'
+    '#submit__label': 'Book Now'
 css: ''
 javascript: ''
 settings:

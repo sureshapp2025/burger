@@ -1,0 +1,18 @@
+uuid: eb59bab9-be68-4011-a8ce-5c3828430270
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.burger
+id: node.burger.changed
+field_name: changed
+entity_type: node
+bundle: burger
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

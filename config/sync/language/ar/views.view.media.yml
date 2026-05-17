@@ -1,0 +1,28 @@
+label: وسائط
+display:
+  default:
+    display_options:
+      title: وسائط
+      fields:
+        thumbnail__target_id:
+          label: 'النسخة المصغرة'
+        bundle:
+          label: النوع
+        uid:
+          label: المؤلف
+        status:
+          label: الحالة
+        operations:
+          label: العمليات
+      filters:
+        bundle:
+          expose:
+            label: النوع
+        langcode:
+          expose:
+            label: اللغة
+  media_page_list:
+    display_title: وسائط
+    display_options:
+      menu:
+        title: وسائط

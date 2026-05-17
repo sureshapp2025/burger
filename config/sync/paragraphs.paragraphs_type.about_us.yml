@@ -1,0 +1,10 @@
+uuid: a0dffefe-edd9-4b8b-8532-d183bd09c58b
+langcode: en
+status: true
+dependencies: {  }
+id: about_us
+label: 'About us'
+icon_uuid: null
+icon_default: null
+description: 'About us page paragraph types'
+behavior_plugins: {  }

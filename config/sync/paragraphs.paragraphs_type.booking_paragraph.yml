@@ -1,0 +1,10 @@
+uuid: c1076225-0936-4af2-8033-d542d84174dd
+langcode: en
+status: true
+dependencies: {  }
+id: booking_paragraph
+label: 'booking paragraph'
+icon_uuid: null
+icon_default: null
+description: 'booking paragraph'
+behavior_plugins: {  }

@@ -1,0 +1,13 @@
+uuid: 0489cd30-e690-4e91-be2d-12a277be49fa
+langcode: en
+status: true
+dependencies: {  }
+name: optimized
+label: optimized
+effects:
+  d11b7770-2e3f-4bab-8844-5f6c68576d62:
+    uuid: d11b7770-2e3f-4bab-8844-5f6c68576d62
+    id: image_convert
+    weight: 1
+    data:
+      extension: webp
