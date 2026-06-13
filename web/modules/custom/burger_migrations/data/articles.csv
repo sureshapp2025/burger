@@ -1,0 +1,4 @@
+id,title,body,created,status,tags
+1,Welcome to Burger,"<p>Welcome to the Burger site. This is an imported article.</p>",1622505600,published,news|welcome
+2,About Burger,"<p>About the Burger project and mission.</p>",1622592000,draft,about
+3,Release Notes,"<p>Release notes for version 1.0.</p>",1622678400,published,release|notes

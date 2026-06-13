@@ -1,0 +1,33 @@
+id: burger_article
+label: 'Burger: Migrate Article from CSV'
+migration_group: burger_migrations
+source:
+  plugin: csv
+  path: web/modules/custom/burger_migrations/data/articles.csv
+  header_row_count: 1
+  keys:
+    - id
+process:
+  title: title
+  uid:
+    plugin: default_value
+    default_value: 1
+  body:
+    plugin: callback
+    callable: trim
+    source: body
+  created: created
+  status:
+    plugin: static_map
+    source: status
+    map:
+      published: 1
+      draft: 0
+  field_tags:
+    plugin: explode
+    delimiter: '|'
+    source: tags
+destination:
+  plugin: 'entity:node'
+  default_bundle: article
+migration_dependencies: {}

@@ -880,6 +880,12 @@ if (getenv('IS_DDEV_PROJECT') == 'true' && file_exists(__DIR__ . '/settings.ddev
   include __DIR__ . '/settings.ddev.php';
 }
 
+// Automatically generated include for settings managed by our custom Docker setup.
+if (getenv('IS_DOCKER_PROJECT') == 'true' && file_exists(__DIR__ . '/settings.docker.php')) {
+  include __DIR__ . '/settings.docker.php';
+}
+
+
 /**
  * Load local development override configuration, if available.
  *

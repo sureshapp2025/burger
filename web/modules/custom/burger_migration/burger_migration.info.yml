@@ -1,0 +1,7 @@
+name: 'Burger Migration'
+type: module
+description: 'Custom module for importing burgers from CSV.'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:node

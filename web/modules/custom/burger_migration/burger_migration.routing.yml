@@ -1,0 +1,7 @@
+burger_migration.import_form:
+  path: '/admin/config/content/burger-import'
+  defaults:
+    _form: '\Drupal\burger_migration\Form\BurgerImportForm'
+    _title: 'Import Burgers'
+  requirements:
+    _permission: 'administer site configuration'

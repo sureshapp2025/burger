@@ -1,0 +1,4 @@
+id: burger_migrations
+label: 'Burger Migrations'
+description: 'Migration group for burger site imports.'
+module: burger_migrations

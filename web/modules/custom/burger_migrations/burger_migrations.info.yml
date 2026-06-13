@@ -1,0 +1,6 @@
+name: Burger Migrations
+type: module
+description: 'Provides migration YAMLs for burger site (article import).'
+package: Custom
+core_version_requirement: '^8 || ^9 || ^10 || ^11'
+version: '1.0'
