@@ -1,0 +1,20 @@
+uuid: e46181fb-3e4c-4d51-8a0e-b8d35b4c624c
+langcode: en
+status: true
+dependencies:
+  module:
+    - burger_api
+    - serialization
+    - user
+_core:
+  default_config_hash: qTQjJBh_Lj_BhwlatwL-V350u_sBW_Txy7erMVj8w-w
+id: burger_navigation
+plugin_id: burger_navigation
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie

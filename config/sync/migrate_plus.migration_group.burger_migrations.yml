@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: iR8BCWsUixqvtR8jeLanxM7dCoWHiAlKrZFUkUiCtQ4
+id: burger_migrations
+label: 'Burger Migrations'
+description: 'Migration group for burger site imports.'
+module: burger_migrations

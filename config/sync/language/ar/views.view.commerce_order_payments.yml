@@ -1,0 +1,41 @@
+display:
+  default:
+    display_title: Default
+    display_options:
+      fields:
+        amount__number:
+          label: الدفع
+          separator: ', '
+        refunded_amount__number:
+          separator: ', '
+        avs_response_code_label:
+          separator: ', '
+        avs_response_code:
+          separator: ', '
+        state:
+          label: الحالة
+          separator: ', '
+        payment_gateway:
+          separator: ', '
+        authorized:
+          separator: ', '
+        completed:
+          label: Completed
+          separator: ', '
+        remote_id:
+          separator: ', '
+        operations:
+          label: العمليات
+      exposed_form:
+        options:
+          submit_button: تطبيق
+          reset_button_label: 'إعادة تعيين'
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+      arguments:
+        order_id:
+          exception:
+            title: الكل
+  page_1:
+    display_title: الصفحة

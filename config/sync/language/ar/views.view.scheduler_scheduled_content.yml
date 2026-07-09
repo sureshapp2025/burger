@@ -1,0 +1,77 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: تصفية
+          reset_button_label: 'إعادة تعيين'
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+      pager:
+        options:
+          tags:
+            previous: '‹ السابقة'
+            next: 'التالية ›'
+            first: '« الأولى'
+            last: 'الأخيرة »'
+      fields:
+        node_bulk_form:
+          action_title: Action
+        title:
+          label: العنوان
+          separator: ', '
+        type:
+          label: 'نوع المحتوى'
+          separator: ', '
+        name:
+          label: المؤلف
+          separator: ', '
+        status:
+          label: الحالة
+          settings:
+            format_custom_true: Published
+            format_custom_false: Unpublished
+          separator: ', '
+        publish_on:
+          separator: ', '
+        unpublish_on:
+          separator: ', '
+        operations:
+          label: العمليات
+      filters:
+        title:
+          expose:
+            label: العنوان
+        type:
+          expose:
+            label: 'نوع المحتوى'
+        status:
+          expose:
+            label: الحالة
+          group_info:
+            label: 'حالة النشر'
+            group_items:
+              1:
+                title: Published
+              2:
+                title: Unpublished
+        langcode:
+          expose:
+            label: اللغة
+    display_title: الرئيسي
+  overview:
+    display_options:
+      tab_options:
+        title: المحتوى
+  user_page:
+    display_options:
+      menu:
+        title: مجدول
+      tab_options:
+        title: المحتوى
+      arguments:
+        uid:
+          exception:
+            title: الكل
+    display_title: مستخدم

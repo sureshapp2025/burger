@@ -1,0 +1,22 @@
+uuid: 74548a23-0e7b-4bdc-bf0c-475b17afd47b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.booking
+id: node.booking.status
+field_name: status
+entity_type: node
+bundle: booking
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

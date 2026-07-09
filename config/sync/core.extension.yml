@@ -1,6 +1,7 @@
 _core:
   default_config_hash: 4GIX5Esnc_umpXUBj4IIocRX7Mt5fPhm4AgXfE3E56E
 module:
+  address: 0
   admin_toolbar: 0
   announcements_feed: 0
   automated_cron: 0
@@ -9,9 +10,21 @@ module:
   block: 0
   block_content: 0
   breakpoint: 0
+  burger_api: 0
+  burger_migrations: 0
+  canvas: 0
   ckeditor5: 0
   coffee: 0
   comment: 0
+  commerce: 0
+  commerce_cart: 0
+  commerce_checkout: 0
+  commerce_number_pattern: 0
+  commerce_order: 0
+  commerce_payment: 0
+  commerce_price: 0
+  commerce_product: 0
+  commerce_store: 0
   common: 0
   conditional_fields: 0
   config: 0
@@ -19,11 +32,14 @@ module:
   contextual: 0
   crop: 0
   ctools: 0
+  ctools_block: 0
   ctools_entity_mask: 0
+  ctools_views: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
+  entity: 0
   entity_browser: 0
   entity_reference_revisions: 0
   field: 0
@@ -36,7 +52,6 @@ module:
   image: 0
   image_widget_crop: 0
   inline_entity_form: 0
-  jsonapi: 0
   language: 0
   link: 0
   locale: 0
@@ -51,21 +66,27 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  profile: 0
+  queue_ui: 0
   responsive_image: 0
   rest: 0
+  rest_menu_items: 0
   restui: 0
+  scheduler: 0
   search: 0
   search_api: 0
   search_api_solr: 0
   serialization: 0
   shortcut: 0
   smtp: 0
+  state_machine: 0
   system: 0
   taxonomy: 0
   text: 0
   token: 0
   toolbar: 0
   twig_tweak: 0
+  ultimate_cron: 0
   user: 0
   views_ui: 0
   webform: 0
@@ -86,4 +107,6 @@ theme:
   claro: 0
   stark: 0
   burger: 0
+  canvas_stark: 0
+  gin: 0
 profile: standard

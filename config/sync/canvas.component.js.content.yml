@@ -1,0 +1,18 @@
+uuid: 5fe92d29-119f-431f-8c5b-6a7d573429fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.js_component.content
+active_version: 8fe3be948e0194e1
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions: {  }
+    fallback_metadata:
+      slot_definitions: {  }
+label: Content
+id: js.content
+provider: null
+source: js
+source_local_id: content

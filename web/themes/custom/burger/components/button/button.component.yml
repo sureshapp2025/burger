@@ -1,0 +1,57 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Canvas Button
+description: A customizable premium call-to-action button.
+group: Content
+props:
+  type: object
+  required:
+    - text
+  properties:
+    text:
+      type: string
+      title: Button Text
+      examples:
+        - Get Started
+    url:
+      type: string
+      format: uri-reference
+      title: Destination URL
+      examples:
+        - '/contact'
+        - 'https://example.com'
+    style:
+      type: string
+      title: Visual Style
+      enum:
+        - primary
+        - secondary
+        - outline
+        - glass
+      meta:enum:
+        primary: Gradient Primary
+        secondary: Dark Charcoal
+        outline: Indigo Outline
+        glass: Frosted Glass
+      default: primary
+    size:
+      type: string
+      title: Size
+      enum:
+        - sm
+        - md
+        - lg
+      meta:enum:
+        sm: Small
+        md: Medium
+        lg: Large
+      default: md
+    target:
+      type: string
+      title: Target
+      enum:
+        - _self
+        - _blank
+      meta:enum:
+        _self: 'Open in same window'
+        _blank: 'Open in a new window'
+      default: _self

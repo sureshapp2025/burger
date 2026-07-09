@@ -1,0 +1,13 @@
+uuid: 8b24fcad-c766-4cc6-9b0d-c23acdf37b38
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.burger.button
+    - canvas.component.sdc.burger.link
+name: Content
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.burger.button
+  - sdc.burger.link

@@ -1,0 +1,31 @@
+/* link.css */
+.canvas-link {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Outfit', 'Inter', sans-serif;
+  font-weight: 500;
+  color: #4f46e5; /* Indigo primary */
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 2px;
+  transition: color 0.2s ease;
+}
+.canvas-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #4f46e5;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.canvas-link:hover {
+  color: #3730a3;
+}
+.canvas-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

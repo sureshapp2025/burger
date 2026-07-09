@@ -1,0 +1,18 @@
+uuid: 723dd6bd-f795-41a9-8567-7eb4782451d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.vegitable
+id: commerce_store.vegitable.mail
+field_name: mail
+entity_type: commerce_store
+bundle: vegitable
+label: Email
+description: 'Store email notifications are sent from this address. If omitted, the "site" email address will be used.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

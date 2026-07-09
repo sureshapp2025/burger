@@ -1,0 +1,25 @@
+uuid: 13b82fb6-7eac-4ee2-9d7c-7c7c5b9eb639
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_car_selective_color
+    - node.type.car_details
+id: node.car_details.field_car_selective_color
+field_name: field_car_selective_color
+entity_type: node
+bundle: car_details
+label: 'car selective color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: car_view
+      display_name: entity_reference_2
+      arguments: {  }
+field_type: entity_reference

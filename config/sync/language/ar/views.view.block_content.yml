@@ -1,6 +1,34 @@
 display:
   default:
+    display_title: Default
     display_options:
       fields:
+        info:
+          separator: ', '
+        type:
+          separator: ', '
+        changed:
+          label: Updated
         operations:
           label: العمليات
+      pager:
+        options:
+          tags:
+            next: 'التالي ›'
+            previous: '‹ السابق'
+          expose:
+            items_per_page_label: 'العناصر لكل صفحة'
+            items_per_page_options_all_label: '- All -'
+            offset_label: الإزاحة
+      exposed_form:
+        options:
+          submit_button: تطبيق
+          reset_button_label: 'إعادة تعيين'
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+  page_1:
+    display_title: الصفحة
+    display_options:
+      menu:
+        title: الصناديق

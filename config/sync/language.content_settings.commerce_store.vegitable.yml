@@ -1,0 +1,18 @@
+uuid: 9681b413-eb1a-4d74-87fc-84f30932da1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.vegitable
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: commerce_store.vegitable
+target_entity_type_id: commerce_store
+target_bundle: vegitable
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,12 @@
+{# image.twig #}
+<div class="canvas-image-wrapper canvas-image--{{ style ?? 'rounded' }}">
+  {% if image is not empty %}
+    {% include 'canvas:image' with image|merge({
+      class: 'canvas-image__img',
+      loading: 'lazy',
+    }) only %}
+  {% endif %}
+  {% if caption is not empty %}
+    <figcaption class="canvas-image__caption">{{ caption }}</figcaption>
+  {% endif %}
+</div>

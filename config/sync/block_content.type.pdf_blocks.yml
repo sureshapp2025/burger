@@ -1,0 +1,8 @@
+uuid: bb54c805-bfc9-4537-abbc-ae3cb2f8543f
+langcode: en
+status: true
+dependencies: {  }
+id: pdf_blocks
+label: 'PDF Blocks'
+revision: true
+description: 'This is the PDF displayed all section'

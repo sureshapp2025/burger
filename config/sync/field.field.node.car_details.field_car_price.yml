@@ -1,0 +1,19 @@
+uuid: 45388322-eb42-4bb1-821b-798f0a3707df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_car_price
+    - node.type.car_details
+id: node.car_details.field_car_price
+field_name: field_car_price
+entity_type: node
+bundle: car_details
+label: 'car Price'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

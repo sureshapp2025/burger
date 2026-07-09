@@ -1,0 +1,19 @@
+uuid: a1b39840-0b2f-43f1-a463-3f7d8a2d3428
+langcode: en
+status: true
+dependencies: {  }
+id: payment_1
+label: 'Payment 1'
+weight: null
+plugin: manual
+configuration:
+  display_label: Manual
+  mode: n/a
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+  instructions:
+    value: ''
+    format: plain_text
+conditions: {  }
+conditionOperator: AND

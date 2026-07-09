@@ -1,0 +1,65 @@
+uuid: 3b6604ae-a950-46ec-a9cd-abcebf07157a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.car_details.field_car_color
+    - field.field.node.car_details.field_car_model
+    - field.field.node.car_details.field_car_price
+    - field.field.node.car_details.field_car_selective_color
+    - field.field.node.car_details.field_car_type
+    - node.type.car_details
+  module:
+    - options
+    - user
+id: node.car_details.default
+targetEntityType: node
+bundle: car_details
+mode: default
+content:
+  field_car_color:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_car_model:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_car_price:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_car_selective_color:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_car_type:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,10 @@
+id: burger_navigation
+plugin_id: burger_navigation
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie

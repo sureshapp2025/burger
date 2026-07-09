@@ -1,0 +1,22 @@
+uuid: bd849cdb-1198-4c55-9dfe-ac45c3d134d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.online
+id: commerce_store.online.status
+field_name: status
+entity_type: commerce_store
+bundle: online
+label: Enabled
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,33 @@
+uuid: 5f6e2f40-d5a0-4ac0-8bce-addf24d4f939
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - system
+  theme:
+    - burger
+id: burger_languageswitcher
+theme: burger
+region: header
+weight: 0
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: visible
+  provider: language
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      en: en
+      ar: ar
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

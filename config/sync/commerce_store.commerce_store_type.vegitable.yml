@@ -1,0 +1,9 @@
+uuid: faec5984-06f5-44bf-b51d-f4917f18ca62
+langcode: en
+status: true
+dependencies: {  }
+id: vegitable
+label: offline
+traits: {  }
+locked: false
+description: ''

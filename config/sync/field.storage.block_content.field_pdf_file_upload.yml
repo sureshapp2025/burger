@@ -1,0 +1,20 @@
+uuid: dec40a11-00c1-4387-82ce-f1d92bebe7d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - media
+id: block_content.field_pdf_file_upload
+field_name: field_pdf_file_upload
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,39 @@
+uuid: 600b615e-3a0e-46cd-bad0-44d43af8187d
+langcode: en
+status: true
+dependencies: {  }
+machineName: content
+name: Content
+required: {  }
+props: {  }
+slots: {  }
+js:
+  original: |
+    // See https://project.pages.drupalcode.org/canvas/ for documentation on how to build a code component
+
+    const Component = ({
+      text = "Content",
+    }) => {
+      return (
+        <div className="text-3xl">
+          {text}
+        </div>
+      );
+    };
+
+    export default Component;
+  compiled: |
+    import { jsx as _jsx } from "react/jsx-runtime";
+    // See https://project.pages.drupalcode.org/canvas/ for documentation on how to build a code component
+    const Component = ({ text = "Content" })=>{
+        return /*#__PURE__*/ _jsx("div", {
+            className: "text-3xl",
+            children: text
+        });
+    };
+    export default Component;
+css:
+  original: ''
+  compiled: |
+    /*! tailwindcss v4.1.13 | MIT License | https://tailwindcss.com */
+dataDependencies: {  }

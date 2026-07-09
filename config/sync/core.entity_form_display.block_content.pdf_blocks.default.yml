@@ -1,0 +1,42 @@
+uuid: 910e24f2-64dc-4f4c-ba61-bf5b5dfc70b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.pdf_blocks
+    - field.field.block_content.pdf_blocks.field_pdf_file_upload
+  module:
+    - media_library
+id: block_content.pdf_blocks.default
+targetEntityType: block_content
+bundle: pdf_blocks
+mode: default
+content:
+  field_pdf_file_upload:
+    type: media_library_widget
+    weight: 26
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

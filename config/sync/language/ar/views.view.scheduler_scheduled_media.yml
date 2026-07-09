@@ -1,0 +1,64 @@
+display:
+  default:
+    display_title: الرئيسي
+    display_options:
+      exposed_form:
+        options:
+          submit_button: تصفية
+          reset_button_label: 'إعادة تعيين'
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'العناصر لكل صفحة'
+            items_per_page_options_all_label: '- All -'
+            offset_label: الإزاحة
+          tags:
+            previous: '‹ السابقة'
+            next: 'التالية ›'
+            first: '« الأولى'
+            last: 'الأخيرة »'
+      fields:
+        media_bulk_form:
+          label: 'تحديث شامل'
+          action_title: Action
+        name:
+          separator: ', '
+        bundle:
+          separator: ', '
+        uid:
+          label: المؤلف
+          separator: ', '
+        status:
+          label: الحالة
+          settings:
+            format_custom_true: Published
+            format_custom_false: Unpublished
+          separator: ', '
+        publish_on:
+          separator: ', '
+        unpublish_on:
+          separator: ', '
+        operations:
+          label: العمليات
+      filters:
+        bundle:
+          expose:
+            label: النوع
+        status:
+          expose:
+            label: الحالة
+          group_info:
+            label: 'حالة النشر'
+            group_items:
+              1:
+                title: Published
+              2:
+                title: Unpublished
+        langcode:
+          expose:
+            label: اللغة
+  user_page:
+    display_title: مستخدم

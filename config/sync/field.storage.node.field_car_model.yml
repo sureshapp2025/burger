@@ -1,0 +1,33 @@
+uuid: 5d89324d-6ac7-42dc-a145-07995a869207
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_car_model
+field_name: field_car_model
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: sedan
+      label: Sedan
+    -
+      value: cashback
+      label: cashback
+    -
+      value: small
+      label: Small
+    -
+      value: big
+      label: big
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

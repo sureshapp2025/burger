@@ -1,0 +1,7 @@
+uuid: 5e7dfb7e-07be-4cfa-a43c-eebb27689c8b
+langcode: en
+status: true
+dependencies: {  }
+id: quantity
+label: Quantity
+elementType: commerce_product_rendered_attribute

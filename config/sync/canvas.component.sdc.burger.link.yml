@@ -1,0 +1,53 @@
+uuid: 83868d89-3fc7-4532-9e85-ee3c9725974c
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - options
+  theme:
+    - burger
+active_version: 8ea3e8edf0bfb615
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        text:
+          required: true
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Read article'
+          expression: ℹ︎string␟value
+        url:
+          required: true
+          field_type: link
+          field_storage_settings: {  }
+          field_instance_settings:
+            title: 0
+            link_type: 17
+          field_widget: link_default
+          default_value:
+            -
+              uri: /node/1
+              options: {  }
+          expression: ℹ︎link␟url
+        target:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+    fallback_metadata:
+      slot_definitions: {  }
+label: 'Canvas Link'
+id: sdc.burger.link
+provider: burger
+source: sdc
+source_local_id: 'burger:link'

@@ -1,6 +1,7 @@
 label: المحتوى
 display:
   default:
+    display_title: Default
     display_options:
       title: المحتوى
       fields:
@@ -8,14 +9,35 @@ display:
           label: العنوان
         type:
           label: 'نوع المحتوى'
+          separator: ', '
         name:
           label: المؤلف
         status:
           label: الحالة
+          settings:
+            format_custom_false: Unpublished
+            format_custom_true: Published
+        changed:
+          label: Updated
         langcode:
           label: اللغة
+          separator: ', '
         operations:
           label: العمليات
+      pager:
+        options:
+          tags:
+            next: 'التالي ›'
+            previous: '‹ السابق'
+            first: '« الأولى'
+            last: 'الأخيرة »'
+      exposed_form:
+        options:
+          submit_button: تصفية
+          reset_button_label: 'إعادة تعيين'
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
       filters:
         title:
           expose:
@@ -26,10 +48,18 @@ display:
         status:
           expose:
             label: الحالة
+          group_info:
+            label: 'حالة النشر'
+            group_items:
+              1:
+                title: Published
+              2:
+                title: Unpublished
         langcode:
           expose:
             label: اللغة
   page_1:
+    display_title: الصفحة
     display_options:
       menu:
         title: المحتوى

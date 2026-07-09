@@ -4,7 +4,8 @@ docroot: web
 php_version: "8.3"
 webserver_type: nginx-fpm
 xdebug_enabled: false
-additional_hostnames: []
+additional_hostnames:
+  - site1
 additional_fqdns: []
 database:
     type: mariadb
@@ -14,7 +15,9 @@ composer_version: "2"
 web_environment: []
 corepack_enable: true
 default_container_timeout: "240"
-
+hooks:
+  post-start:
+    - exec: mysql -uroot -proot -hdb -e "CREATE DATABASE IF NOT EXISTS db_subsite; GRANT ALL PRIVILEGES ON db_subsite.* TO 'db'@'%'; FLUSH PRIVILEGES;"
 # Key features of DDEV's config.yaml:
 
 # name: <projectname> # Name of the project, automatically provides
@@ -45,7 +48,7 @@ default_container_timeout: "240"
 #   MySQL versions can be 5.5-8.0, 8.4
 #   PostgreSQL versions can be 9-18
 
-# router_http_port: <port>  # Port to be used for http (defaults to global configuration, usually 80)
+router_http_port: "33000"
 # router_https_port: <port> # Port for https (defaults to global configuration, usually 443)
 
 # xdebug_enabled: false  # Set to true to enable Xdebug and "ddev start" or "ddev restart"

@@ -1,0 +1,39 @@
+/* image.css */
+.canvas-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: 1rem 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.canvas-image__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+.canvas-image-wrapper:hover .canvas-image__img {
+  transform: scale(1.03);
+}
+.canvas-image--rounded {
+  border-radius: 12px;
+}
+.canvas-image--circle {
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+}
+.canvas-image--circle .canvas-image__img {
+  object-fit: cover;
+  height: 100%;
+}
+.canvas-image--shadow {
+  border-radius: 12px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+.canvas-image__caption {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-style: italic;
+}

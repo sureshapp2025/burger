@@ -1,0 +1,11 @@
+uuid: 1043073c-8f62-407a-9dc4-6d528da2510b
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.webform_access_group_entity
+name: 'Webform access'
+configEntityTypeId: component
+weight: 0
+items:
+  - block.webform_access_group_entity

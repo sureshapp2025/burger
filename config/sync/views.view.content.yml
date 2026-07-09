@@ -471,7 +471,7 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Published
+                title: Published1
                 operator: '='
                 value: '1'
               2:
@@ -489,7 +489,8 @@ display:
           entity_field: langcode
           plugin_id: language
           operator: in
-          value: {  }
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
           group: 1
           exposed: true
           expose:

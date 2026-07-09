@@ -1,0 +1,7 @@
+uuid: f0ea0ab4-f3d3-43fc-b862-6edb0984b8da
+langcode: en
+status: true
+dependencies: {  }
+id: size
+label: Size
+elementType: radios

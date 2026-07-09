@@ -1,0 +1,11 @@
+uuid: e953500e-30df-4f0f-8a5b-d98814f64e08
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.block.commerce_checkout_progress
+name: Commerce
+configEntityTypeId: component
+weight: 0
+items:
+  - block.commerce_checkout_progress

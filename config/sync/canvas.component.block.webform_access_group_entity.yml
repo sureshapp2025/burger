@@ -1,0 +1,22 @@
+uuid: 47b8ce71-6cd9-4749-9461-86844f3fbda4
+langcode: en
+status: true
+dependencies:
+  module:
+    - webform_access
+active_version: 9619797f1d00d723
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: webform_access_group_entity
+        label: 'Webform access group entities'
+        label_display: '0'
+        provider: webform_access
+    fallback_metadata:
+      slot_definitions: null
+label: 'Webform access group entities'
+id: block.webform_access_group_entity
+provider: webform_access
+source: block
+source_local_id: webform_access_group_entity

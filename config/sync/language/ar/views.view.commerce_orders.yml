@@ -1,0 +1,66 @@
+label: الطلبات
+display:
+  default:
+    display_title: الرئيسي
+    display_options:
+      exposed_form:
+        options:
+          submit_button: تصفية
+          reset_button_label: 'إعادة تعيين'
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'العناصر لكل صفحة'
+            items_per_page_options_all_label: '- All -'
+            offset_label: الإزاحة
+          tags:
+            previous: '‹ السابقة'
+            next: 'التالية ›'
+            first: '« الأولى'
+            last: 'الأخيرة »'
+      fields:
+        order_number:
+          separator: ', '
+        placed:
+          label: التاريخ
+          separator: ', '
+        type:
+          label: النوع
+          separator: ', '
+        store_id:
+          label: المتجر
+          separator: ', '
+        uid:
+          separator: ', '
+        mail:
+          label: 'البريد الإلكتروني'
+          separator: ', '
+        state:
+          label: الحالة
+          separator: ', '
+        total_price__number:
+          label: المجموع
+          separator: ', '
+        operations:
+          label: العمليات
+      filters:
+        order_number:
+          expose:
+            label: 'رقم الطلب'
+        type:
+          expose:
+            label: النوع
+        state:
+          expose:
+            label: الحالة
+      title: الطلبات
+  page_1:
+    display_title: الصفحة
+    display_options:
+      menu:
+        title: الطلبات
+      tab_options:
+        title: الطلبات

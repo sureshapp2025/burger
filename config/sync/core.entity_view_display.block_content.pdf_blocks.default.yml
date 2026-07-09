@@ -1,0 +1,24 @@
+uuid: 057ce4d0-4b6d-4c08-b2ae-b3e16ad9901c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.pdf_blocks
+    - field.field.block_content.pdf_blocks.field_pdf_file_upload
+id: block_content.pdf_blocks.default
+targetEntityType: block_content
+bundle: pdf_blocks
+mode: default
+content:
+  field_pdf_file_upload:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

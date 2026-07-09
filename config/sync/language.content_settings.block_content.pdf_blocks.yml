@@ -1,0 +1,18 @@
+uuid: 8695155f-0162-495d-8a4d-2629875b2d55
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.pdf_blocks
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: block_content.pdf_blocks
+target_entity_type_id: block_content
+target_bundle: pdf_blocks
+default_langcode: site_default
+language_alterable: true

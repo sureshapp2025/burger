@@ -1,0 +1,22 @@
+uuid: 2ca99032-3d72-469e-9323-58e64539a157
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.vegitable
+id: commerce_store.vegitable.status
+field_name: status
+entity_type: commerce_store
+bundle: vegitable
+label: Enabled
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,39 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Canvas Image
+description: An image component designed for Canvas with optional caption and hover effects.
+group: Media
+props:
+  type: object
+  required:
+    - image
+  properties:
+    image:
+      $ref: json-schema-definitions://canvas.module/image
+      type: object
+      title: Image
+      description: Choose an image from the Media Library.
+      examples:
+        - src: 'https://placehold.co/600x400'
+          alt: 'Placeholder Image'
+          width: 600
+          height: 400
+    caption:
+      type: string
+      title: Caption
+      description: Optional caption to display underneath the image.
+      examples:
+        - 'A beautiful scenic view'
+    style:
+      type: string
+      title: Image Border Style
+      enum:
+        - rounded
+        - circle
+        - shadow
+        - flat
+      meta:enum:
+        rounded: Rounded Corners
+        circle: Circular
+        shadow: Premium Drop Shadow
+        flat: Plain Rectangular
+      default: rounded

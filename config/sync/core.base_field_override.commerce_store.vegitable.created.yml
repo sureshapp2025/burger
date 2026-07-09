@@ -1,0 +1,18 @@
+uuid: 6bae5c36-2101-41c6-9f7c-e41cd9d5c5fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.vegitable
+id: commerce_store.vegitable.created
+field_name: created
+entity_type: commerce_store
+bundle: vegitable
+label: Created
+description: 'The time when the store was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

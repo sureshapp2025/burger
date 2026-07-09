@@ -1,0 +1,20 @@
+uuid: 3da5a170-3649-49b6-ae36-8abaa3abc141
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.vegitable
+id: commerce_store.vegitable.uid
+field_name: uid
+entity_type: commerce_store
+bundle: vegitable
+label: Owner
+description: 'The store owner.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\commerce_store\Entity\Store::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

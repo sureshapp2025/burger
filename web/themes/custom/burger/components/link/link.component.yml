@@ -1,0 +1,32 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Canvas Link
+description: An inline text link with sleek slide hover animations.
+group: Content
+props:
+  type: object
+  required:
+    - text
+    - url
+  properties:
+    text:
+      type: string
+      title: Link Text
+      examples:
+        - Read article
+    url:
+      type: string
+      format: uri-reference
+      title: Link URL
+      examples:
+        - '/node/1'
+        - 'https://www.drupal.org'
+    target:
+      type: string
+      title: Target
+      enum:
+        - _self
+        - _blank
+      meta:enum:
+        _self: 'Open in same window'
+        _blank: 'Open in a new window'
+      default: _self

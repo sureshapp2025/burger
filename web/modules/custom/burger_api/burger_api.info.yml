@@ -1,0 +1,8 @@
+name: 'Burger API'
+type: module
+description: 'Provides custom REST endpoints for the Burger website.'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:rest
+  - drupal:serialization

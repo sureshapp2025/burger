@@ -1,0 +1,21 @@
+uuid: 6fc38a2e-d15a-4c63-9d2e-416e158caae9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_car_model
+    - node.type.car_details
+  module:
+    - options
+id: node.car_details.field_car_model
+field_name: field_car_model
+entity_type: node
+bundle: car_details
+label: 'Car Model'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

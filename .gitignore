@@ -1,20 +1,20 @@
 # Ignore core
-/core/
+/web/core/
 /vendor/
 
 # Ignore contributed modules/themes (if using Composer)
-/modules/contrib/
-/themes/contrib/
-/profiles/contrib/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
 
 # Ignore custom files (optional: remove if you want to track them)
-/sites/*/files
-/sites/*/private
+/web/sites/*/files
+/web/sites/*/private
 
 # Ignore settings files
-/sites/*/settings.php
-/sites/*/settings.local.php
-/sites/*/services.yml
+/web/sites/*/settings.php
+/web/sites/*/settings.local.php
+/web/sites/*/services.yml
 
 # Ignore environment files
 .env

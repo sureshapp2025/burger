@@ -1,0 +1,18 @@
+uuid: 2841ca4a-e310-4e8c-9a71-f56d5851d42d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Booking
+type: booking
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,11 @@
+uuid: 732944e0-5bc3-4519-94b5-e21b29dc22ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - canvas.component.sdc.burger.image
+name: Media
+configEntityTypeId: component
+weight: 0
+items:
+  - sdc.burger.image

@@ -1,8 +1,32 @@
 display:
   default:
+    display_title: Default
     display_options:
       title: وسائط
+      fields:
+        media_bulk_form:
+          action_title: Action
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'العناصر لكل صفحة'
+            items_per_page_options_all_label: '- All -'
+            offset_label: الإزاحة
+      exposed_form:
+        options:
+          reset_button_label: 'إعادة تعيين'
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
       filters:
+        status:
+          group_info:
+            label: Published
+            group_items:
+              1:
+                title: Published
+              2:
+                title: Unpublished
         name:
           expose:
             label: الاسم
@@ -10,14 +34,23 @@ display:
           expose:
             label: اللغة
   page:
+    display_title: الصفحة
     display_options:
       fields:
+        media_bulk_form:
+          action_title: Action
+        name:
+          separator: ', '
         edit_media:
           text: تحرير
         delete_media:
           text: حذف
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: الكل
       filters:
         name:
           expose:
@@ -31,6 +64,12 @@ display:
           label: الاسم
         uid:
           label: المؤلف
+        changed:
+          label: Updated
+      arguments:
+        bundle:
+          exception:
+            title: الكل
       filters:
         name:
           expose:

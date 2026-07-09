@@ -1,0 +1,39 @@
+uuid: b58f615c-9f76-40be-93f4-3bd7a6e70abb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.booking.field_car
+    - field.field.node.booking.field_customer_name
+    - node.type.booking
+  module:
+    - user
+id: node.booking.default
+targetEntityType: node
+bundle: booking
+mode: default
+content:
+  field_car:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_customer_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

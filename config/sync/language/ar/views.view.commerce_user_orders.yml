@@ -1,0 +1,47 @@
+display:
+  default:
+    display_title: الرئيسي
+    display_options:
+      exposed_form:
+        options:
+          submit_button: تطبيق
+          reset_button_label: 'إعادة تعيين'
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+      pager:
+        options:
+          tags:
+            previous: '‹ السابق'
+            next: 'التالي ›'
+            first: '« الأولى'
+            last: 'الأخيرة »'
+          expose:
+            items_per_page_label: 'العناصر لكل صفحة'
+            items_per_page_options_all_label: '- All -'
+            offset_label: الإزاحة
+      fields:
+        order_id:
+          label: 'المعرف ID'
+          separator: ', '
+        order_number:
+          label: 'رقم الطلب'
+          separator: ', '
+        placed:
+          label: التاريخ
+          separator: ', '
+        total_price__number:
+          label: المجموع
+          separator: ', '
+        state:
+          label: الحالة
+          separator: ', '
+      title: الطلبات
+      arguments:
+        uid:
+          exception:
+            title: الكل
+  order_page:
+    display_options:
+      menu:
+        title: الطلبات

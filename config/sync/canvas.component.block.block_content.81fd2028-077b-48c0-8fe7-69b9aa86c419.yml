@@ -1,0 +1,25 @@
+uuid: 749b21c2-b3b7-4245-af80-3f99c18dbe68
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:pdf_blocks:81fd2028-077b-48c0-8fe7-69b9aa86c419'
+  module:
+    - block_content
+active_version: 0e9e1977952beedf
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:81fd2028-077b-48c0-8fe7-69b9aa86c419'
+        label: 'Home PDF'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Home PDF'
+id: block.block_content.81fd2028-077b-48c0-8fe7-69b9aa86c419
+provider: block_content
+source: block
+source_local_id: 'block_content:81fd2028-077b-48c0-8fe7-69b9aa86c419'

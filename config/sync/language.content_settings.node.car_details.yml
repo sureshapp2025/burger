@@ -1,0 +1,11 @@
+uuid: 71a3e43f-27f2-44e8-8262-d6c193d5b5da
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.car_details
+id: node.car_details
+target_entity_type_id: node
+target_bundle: car_details
+default_langcode: site_default
+language_alterable: false

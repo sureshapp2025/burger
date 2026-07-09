@@ -1,23 +1,125 @@
 display:
   default:
+    display_title: الرئيسي
     display_options:
+      exposed_form:
+        options:
+          submit_button: تطبيق
+          reset_button_label: 'إعادة تعيين'
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+      pager:
+        options:
+          tags:
+            first: '« الأولى'
+            last: 'الأخيرة »'
+          expose:
+            items_per_page_label: 'العناصر لكل صفحة'
+            items_per_page_options_all_label: '- All -'
+            offset_label: الإزاحة
       fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        created:
+          label: Created
+          separator: ', '
+        remote_addr:
+          label: 'IP address'
+          separator: ', '
         view_webform_submission:
           label: العمليات
+      arguments:
+        in_draft:
+          exception:
+            title: الكل
   embed_administer:
     display_options:
       fields:
+        webform_submission_bulk_form:
+          action_title: Action
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          separator: ', '
+        locked:
+          label: Locked
+          separator: ', '
+        created:
+          label: Created
+          separator: ', '
+        completed:
+          label: Completed
+          separator: ', '
+        remote_addr:
+          label: 'IP address'
+          separator: ', '
         operations:
           label: العمليات
+      filters:
+        locked:
+          expose:
+            label: Locked
   embed_manage:
     display_options:
       fields:
+        webform_submission_bulk_form:
+          action_title: Action
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          separator: ', '
+        locked:
+          label: Locked
+          separator: ', '
+        created:
+          label: Created
+          separator: ', '
+        completed:
+          label: Completed
+          separator: ', '
+        remote_addr:
+          label: 'IP address'
+          separator: ', '
         view_webform_submission:
           label: العمليات
         edit_webform_submission:
           label: العمليات
+          text: edit
+      filters:
+        locked:
+          expose:
+            label: Locked
   embed_review:
     display_options:
       fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          separator: ', '
+        locked:
+          label: Locked
+          separator: ', '
+        created:
+          label: Created
+          separator: ', '
+        completed:
+          label: Completed
+          separator: ', '
+        remote_addr:
+          label: 'IP address'
+          separator: ', '
         view_webform_submission:
           label: العمليات
+      filters:
+        locked:
+          expose:
+            label: Locked

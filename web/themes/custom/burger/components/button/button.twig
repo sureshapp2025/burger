@@ -1,0 +1,13 @@
+{# button.twig #}
+{% set element = url is not empty ? 'a' : 'button' %}
+<{{ element }}
+  {% if url is not empty %}
+    href="{{ url }}"
+    target="{{ target }}"
+  {% else %}
+    type="button"
+  {% endif %}
+  class="canvas-btn canvas-btn--{{ style ?? 'primary' }} canvas-btn--{{ size ?? 'md' }}"
+>
+  {{ text }}
+</{{ element }}>

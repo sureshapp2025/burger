@@ -1,0 +1,19 @@
+uuid: 474de694-05ac-4e42-bad9-efa8dd945fa6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_customer_name
+    - node.type.booking
+id: node.booking.field_customer_name
+field_name: field_customer_name
+entity_type: node
+bundle: booking
+label: 'Customer Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
